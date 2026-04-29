@@ -37,7 +37,15 @@ app.get("/news", async (req, res) => {
         const response = await axios.get(
             "https://min-api.cryptocompare.com/data/v2/news/?lang=EN"
         );
-        res.json(response.data.Data.slice(0, 5));
+
+        if (response.data && Array.isArray(response.data.Data)) {
+            res.json(response.data.Data.slice(0, 5));
+        } else {
+            res.status(401).json({ 
+                error: "API Error", 
+                message: response.data.Message || "Unable to fetch news. An API key might be required." 
+            });
+        }
     } catch (error) {
         console.error("Error fetching news:", error.message);
         res.status(500).json({ error: "Failed to fetch news" });
