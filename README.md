@@ -76,6 +76,6 @@ A sleek, lightweight Express.js backend for fetching real-time cryptocurrency pr
 
 ---
 
-## 📝 License
+## 🛠️ Usage & Learning
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project was built for learning purposes. Feel free to fork it, tweak it, and use it in your own projects! No strings attached. 🚀
