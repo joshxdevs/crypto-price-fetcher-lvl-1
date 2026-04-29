@@ -35,15 +35,15 @@ app.get("/eth-price", async (req, res) => {
 app.get("/news", async (req, res) => {
     try {
         const response = await axios.get(
-            "https://min-api.cryptocompare.com/data/v2/news/?lang=EN"
+            "https://api.coingecko.com/api/v3/news?page=1"
         );
 
-        if (response.data && Array.isArray(response.data.Data)) {
-            res.json(response.data.Data.slice(0, 5));
+        if (response.data && Array.isArray(response.data.data)) {
+            res.json(response.data.data.slice(0, 5));
         } else {
-            res.status(401).json({ 
+            res.status(500).json({ 
                 error: "API Error", 
-                message: response.data.Message || "Unable to fetch news. An API key might be required." 
+                message: "Unable to fetch news from CoinGecko." 
             });
         }
     } catch (error) {

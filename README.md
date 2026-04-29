@@ -71,8 +71,7 @@ A sleek, lightweight Express.js backend for fetching real-time cryptocurrency pr
 ### 📰 Get Latest News
 - **URL**: `/news`
 - **Method**: `GET`
-- **Response**: An array of the 5 most recent news articles.
-  > **Note**: This endpoint may require an API key from [CryptoCompare](https://min-api.cryptocompare.com/) if the free tier limit is reached or if authentication is enforced.
+- **Response**: An array of the 5 most recent news articles from CoinGecko.
 
 ---
 
