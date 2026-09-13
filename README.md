@@ -1,10 +1,10 @@
-# 🪙 Crypto Price Fetcher (Level 1)
+# Crypto Price Fetcher (Level 1)
 
 A sleek, lightweight Express.js backend for fetching real-time cryptocurrency prices and the latest market news.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Real-time Bitcoin Price**: Fetches the current USD price of BTC.
 - **Real-time Ethereum Price**: Fetches the current USD price of ETH.
@@ -12,7 +12,7 @@ A sleek, lightweight Express.js backend for fetching real-time cryptocurrency pr
 - **Robust Error Handling**: Gracefully handles API failures and missing data.
 - **CORS Enabled**: Ready to be consumed by any frontend application.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Node.js**: Runtime environment.
 - **Express.js**: Web framework for the API.
@@ -21,7 +21,7 @@ A sleek, lightweight Express.js backend for fetching real-time cryptocurrency pr
 
 ---
 
-## 📥 Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
@@ -42,9 +42,9 @@ A sleek, lightweight Express.js backend for fetching real-time cryptocurrency pr
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
-### 💰 Get Bitcoin Price
+### Get Bitcoin Price
 - **URL**: `/btc-price`
 - **Method**: `GET`
 - **Response**:
@@ -56,7 +56,7 @@ A sleek, lightweight Express.js backend for fetching real-time cryptocurrency pr
   }
   ```
 
-### 💎 Get Ethereum Price
+### Get Ethereum Price
 - **URL**: `/eth-price`
 - **Method**: `GET`
 - **Response**:
@@ -68,13 +68,13 @@ A sleek, lightweight Express.js backend for fetching real-time cryptocurrency pr
   }
   ```
 
-### 📰 Get Latest News
+### Get Latest News
 - **URL**: `/news`
 - **Method**: `GET`
 - **Response**: An array of the 5 most recent news articles from CoinGecko.
 
 ---
 
-## 🛠️ Usage & Learning
+## License
 
-This project was built for learning purposes. Feel free to fork it, tweak it, and use it in your own projects! No strings attached. 🚀
+This project is licensed under the MIT License
